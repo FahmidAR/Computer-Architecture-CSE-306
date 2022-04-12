@@ -1,0 +1,48 @@
+FF
+2C
+0C
+[VAR]
+24
+05
+0C
+4F
+AC
+[:COMPARE]
+04
+[VAR]
+34
+CC
+(COMPARE) 24
+05
+1C
+04
+[VAR]
+4C
+8C
+[:J1]
+AC
+[:LOGICAL]
+BC
+(J1) AC
+[:ADD]
+BC
+(ADD) 04
+4F
+1C
+04
+[VAR]
+3C
+0C 
+[VAR]
+BC
+(LOGICAL) 04
+4F
+1C
+04
+[VAR]
+EC
+0C 
+[VAR]
+BC
+
+

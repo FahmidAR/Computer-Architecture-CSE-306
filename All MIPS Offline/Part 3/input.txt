@@ -1,0 +1,22 @@
+R_TYPE:
+add 	$t0, 	$t0, 	$t1
+sub 	$t0 	$t0 	$t1
+and 	$t0 	$t3 	$t1
+or 	$t0 	$t3 	$t0
+beq 	$t0	$t1	JUMP
+sll 	$t1 	$t2 	3 
+srl 	$t1 	$t2 	3 
+nor 	$t0 	$t2 	$t4
+I_TYPE:
+addi 	$t2 	$t1 	100
+subi 	$t0 	$t0 	3 
+andi 	$t2 	$t1 	100
+ori 	$t2 	$t1 	2
+sw 	$t3 	100($t2)
+lw 	$t2 	92($t2)
+beq 	$t1 	$t2 	R_TYPE
+bneq 	$t1 	$t2 	I_TYPE
+JUMP:
+j 	43
+EXIT:
+

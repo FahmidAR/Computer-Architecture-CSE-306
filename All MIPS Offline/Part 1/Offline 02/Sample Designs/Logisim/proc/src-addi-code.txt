@@ -1,0 +1,10 @@
+nop
+addi 1,1
+addi 1,127
+addi 1,127
+addi 1,255
+addi 1,128
+
+addi 1,-126
+jz 1,2
+j 3822

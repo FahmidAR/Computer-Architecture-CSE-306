@@ -1,0 +1,9 @@
+nop
+li 15,65535
+li 0,1234
+push 0
+li 1,5678
+push 1
+pop 2
+pop 3
+add 4,2,3

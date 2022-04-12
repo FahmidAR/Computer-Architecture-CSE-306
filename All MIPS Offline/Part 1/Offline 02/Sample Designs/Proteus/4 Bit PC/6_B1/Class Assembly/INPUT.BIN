@@ -1,0 +1,54 @@
+FF
+IN; 2C
+STA
+[VAR]; 0C
+MOV ACC,
+05; 24
+STA
+[4F]; 0C
+CALL
+[:COMPARE]; AC
+LDA
+[VAR]; 04
+OUT; 34
+HLT; CC
+
+(COMPARE) MOV ACC,
+06; 24
+MOV B,ACC; 1C
+LDA
+[VAR]; 04
+SUB B; 4C
+JZ     
+[:J1];  8C
+CALL
+[:LOGICAL]; AC
+RET; BC
+(J1) CALL
+[:ADD]; AC
+RET;BC
+
+(ADD) LDA
+[4F]; 04
+MOV B,ACC; 1C
+LDA
+[VAR]; 04
+ADD B; 3C
+STA 
+[VAR]; 0C
+RET; BC
+
+(LOGICAL) LDA
+[4F]; 04
+MOV B,ACC; 1C
+LDA 
+[VAR]; 04
+OR B; EC
+STA 
+[VAR]; 0C
+RET; BC
+
+
+now, var=50
+
+

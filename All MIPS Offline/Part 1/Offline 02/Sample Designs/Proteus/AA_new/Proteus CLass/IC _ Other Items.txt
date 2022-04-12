@@ -1,0 +1,47 @@
+ICs:
+
+Quad D-FF with Tristate Output: 74LS173
+4-bit Buffer with Tristate Output: 74LS244
+1-bit Quad BUS Buffer with Tristate Output: 74LS126
+4-bit Bidirectional Universal Shift Register: 74LS194
+4-bit Synchronous Up/Down Counter: 74LS193
+3:8 Decoder: 74LS138
+1:4 MUX: 74LS153
+1:2 MUX: 74LS157
+HEX Buffer with Tristate Output: 74LS366
+2-input XOR: 74LS386
+EPROM: 2732
+RAM: 6116
+2-input OR: 74LS32
+2-input AND: 74LS08
+HEX Inverter (NOT): 74LS04
+2-input NAND: 74LS00
+
+Other Items:
+
+LOGICPROBE
+LOGICSTATE
+CLOCK
+RES
+SWITCH
+LED-BIRG
+SW-SPST-MOM
+
+Four Components: Configuration Practice: 
+1. Universal Shift Register
+2. ROM
+3. Register (Accumulator)
+4. PC
+
+
+ROM Input file name: NAME.BIN
+
+NAME.BIN,ASCHEX
+
+ASCHEX --> is a function that converts ASCII value to HEX.
+
+
+
+
+
+
